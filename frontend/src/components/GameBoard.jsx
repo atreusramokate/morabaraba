@@ -43,13 +43,13 @@ const GameBoard = () => {
     { x: 100, y: 200, connections: [14, 8, 7] }, // 15 - left center
     
     // Inner square: 16-23
-    { x: 150, y: 150, connections: [17, 23, 18] },  // 16 - top-left corner
+    { x: 150, y: 150, connections: [17, 23] },  // 16 - top-left corner
     { x: 200, y: 150, connections: [16, 18, 9] }, // 17 - top center
-    { x: 250, y: 150, connections: [17, 19, 16] },  // 18 - top-right corner
+    { x: 250, y: 150, connections: [17, 19] },  // 18 - top-right corner
     { x: 250, y: 200, connections: [18, 20, 11] }, // 19 - right center
-    { x: 250, y: 250, connections: [19, 21, 22] },  // 20 - bottom-right corner
+    { x: 250, y: 250, connections: [19, 21] },  // 20 - bottom-right corner
     { x: 200, y: 250, connections: [20, 22, 13] }, // 21 - bottom center
-    { x: 150, y: 250, connections: [21, 23, 20] },  // 22 - bottom-left corner
+    { x: 150, y: 250, connections: [21, 23] },  // 22 - bottom-left corner
     { x: 150, y: 200, connections: [22, 16, 15] }, // 23 - left center
   ];
 
