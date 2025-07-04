@@ -275,10 +275,6 @@ const GameBoard = () => {
                   {/* Diagonal lines for middle square */}
                   <line x1="100" y1="100" x2="300" y2="300" stroke="#92400e" strokeWidth="2" />
                   <line x1="300" y1="100" x2="100" y2="300" stroke="#92400e" strokeWidth="2" />
-                  
-                  {/* Diagonal lines for inner square */}
-                  <line x1="150" y1="150" x2="250" y2="250" stroke="#92400e" strokeWidth="2" />
-                  <line x1="250" y1="150" x2="150" y2="250" stroke="#92400e" strokeWidth="2" />
 
                   {/* Board positions */}
                   {boardPositions.map((pos, index) => {
