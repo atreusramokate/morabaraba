@@ -23,19 +23,19 @@ const GameBoard = () => {
   // Define the board positions and their connections
   const boardPositions = [
     // Outer square: 0-7
-    { x: 50, y: 50, connections: [1, 9, 2] },     // 0 - top-left corner
-    { x: 200, y: 50, connections: [0, 2, 4] }, // 1 - top center
-    { x: 350, y: 50, connections: [1, 14, 0] },   // 2 - top-right corner
-    { x: 350, y: 200, connections: [2, 4, 7] }, // 3 - right center
+    { x: 50, y: 50, connections: [1, 7, 2] },     // 0 - top-left corner
+    { x: 200, y: 50, connections: [0, 2, 9] }, // 1 - top center
+    { x: 350, y: 50, connections: [1, 3, 0] },   // 2 - top-right corner
+    { x: 350, y: 200, connections: [2, 4, 11] }, // 3 - right center
     { x: 350, y: 350, connections: [3, 5, 6] },   // 4 - bottom-right corner
-    { x: 200, y: 350, connections: [4, 6, 7] }, // 5 - bottom center
-    { x: 50, y: 350, connections: [5, 11, 4] },   // 6 - bottom-left corner
-    { x: 50, y: 200, connections: [6, 0, 3] }, // 7 - left center
+    { x: 200, y: 350, connections: [4, 6, 13] }, // 5 - bottom center
+    { x: 50, y: 350, connections: [5, 7, 4] },   // 6 - bottom-left corner
+    { x: 50, y: 200, connections: [6, 0, 15] }, // 7 - left center
     
     // Middle square: 8-15
     { x: 100, y: 100, connections: [9, 15, 10] },   // 8 - top-left corner
     { x: 200, y: 100, connections: [8, 10, 1] }, // 9 - top center
-    { x: 300, y: 100, connections: [9, 14, 8] },   // 10 - top-right corner
+    { x: 300, y: 100, connections: [9, 11, 8] },   // 10 - top-right corner
     { x: 300, y: 200, connections: [10, 12, 3] }, // 11 - right center
     { x: 300, y: 300, connections: [11, 13, 14] },  // 12 - bottom-right corner
     { x: 200, y: 300, connections: [12, 14, 5] }, // 13 - bottom center
