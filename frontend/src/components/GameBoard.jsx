@@ -23,34 +23,34 @@ const GameBoard = () => {
   // Define the board positions and their connections
   const boardPositions = [
     // Outer square: 0-7
-    { x: 50, y: 50, connections: [1, 9] },     // 0
-    { x: 200, y: 50, connections: [0, 2, 4] }, // 1
-    { x: 350, y: 50, connections: [1, 14] },   // 2
-    { x: 350, y: 200, connections: [2, 4, 7] }, // 3
-    { x: 350, y: 350, connections: [3, 5] },   // 4
-    { x: 200, y: 350, connections: [4, 6, 7] }, // 5
-    { x: 50, y: 350, connections: [5, 11] },   // 6
-    { x: 50, y: 200, connections: [6, 0, 3] }, // 7
+    { x: 50, y: 50, connections: [1, 9, 2] },     // 0 - top-left corner
+    { x: 200, y: 50, connections: [0, 2, 4] }, // 1 - top center
+    { x: 350, y: 50, connections: [1, 14, 0] },   // 2 - top-right corner
+    { x: 350, y: 200, connections: [2, 4, 7] }, // 3 - right center
+    { x: 350, y: 350, connections: [3, 5, 6] },   // 4 - bottom-right corner
+    { x: 200, y: 350, connections: [4, 6, 7] }, // 5 - bottom center
+    { x: 50, y: 350, connections: [5, 11, 4] },   // 6 - bottom-left corner
+    { x: 50, y: 200, connections: [6, 0, 3] }, // 7 - left center
     
     // Middle square: 8-15
-    { x: 100, y: 100, connections: [9, 15] },   // 8
-    { x: 200, y: 100, connections: [8, 10, 1] }, // 9
-    { x: 300, y: 100, connections: [9, 14] },   // 10
-    { x: 300, y: 200, connections: [10, 12, 3] }, // 11
-    { x: 300, y: 300, connections: [11, 13] },  // 12
-    { x: 200, y: 300, connections: [12, 14, 5] }, // 13
-    { x: 100, y: 300, connections: [13, 15] },  // 14
-    { x: 100, y: 200, connections: [14, 8, 7] }, // 15
+    { x: 100, y: 100, connections: [9, 15, 10] },   // 8 - top-left corner
+    { x: 200, y: 100, connections: [8, 10, 1] }, // 9 - top center
+    { x: 300, y: 100, connections: [9, 14, 8] },   // 10 - top-right corner
+    { x: 300, y: 200, connections: [10, 12, 3] }, // 11 - right center
+    { x: 300, y: 300, connections: [11, 13, 14] },  // 12 - bottom-right corner
+    { x: 200, y: 300, connections: [12, 14, 5] }, // 13 - bottom center
+    { x: 100, y: 300, connections: [13, 15, 12] },  // 14 - bottom-left corner
+    { x: 100, y: 200, connections: [14, 8, 7] }, // 15 - left center
     
     // Inner square: 16-23
-    { x: 150, y: 150, connections: [17, 23] },  // 16
-    { x: 200, y: 150, connections: [16, 18, 9] }, // 17
-    { x: 250, y: 150, connections: [17, 19] },  // 18
-    { x: 250, y: 200, connections: [18, 20, 11] }, // 19
-    { x: 250, y: 250, connections: [19, 21] },  // 20
-    { x: 200, y: 250, connections: [20, 22, 13] }, // 21
-    { x: 150, y: 250, connections: [21, 23] },  // 22
-    { x: 150, y: 200, connections: [22, 16, 15] }, // 23
+    { x: 150, y: 150, connections: [17, 23, 18] },  // 16 - top-left corner
+    { x: 200, y: 150, connections: [16, 18, 9] }, // 17 - top center
+    { x: 250, y: 150, connections: [17, 19, 16] },  // 18 - top-right corner
+    { x: 250, y: 200, connections: [18, 20, 11] }, // 19 - right center
+    { x: 250, y: 250, connections: [19, 21, 22] },  // 20 - bottom-right corner
+    { x: 200, y: 250, connections: [20, 22, 13] }, // 21 - bottom center
+    { x: 150, y: 250, connections: [21, 23, 20] },  // 22 - bottom-left corner
+    { x: 150, y: 200, connections: [22, 16, 15] }, // 23 - left center
   ];
 
   // Define mill combinations (3 in a row)
