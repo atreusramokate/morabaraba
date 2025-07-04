@@ -379,7 +379,7 @@ const GameBoard = () => {
                   <Crown className="w-5 h-5 text-green-600" />
                 </div>
                 <p className="text-green-800 text-lg">
-                  Player {gameState.winner} {gameState.winner === 1 ? '🐄' : '🐂'} Wins!
+                  Player {gameState.winner} ({gameState.winner === 1 ? 'Dark' : 'Light'}) Wins!
                 </p>
               </Card>
             )}
