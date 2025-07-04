@@ -328,10 +328,10 @@ const GameBoard = () => {
                 <Users className="w-5 h-5 text-amber-600" />
               </div>
               <Badge 
-                variant={gameState.currentPlayer === 1 ? "destructive" : "default"}
+                variant={gameState.currentPlayer === 1 ? "secondary" : "default"}
                 className="text-lg p-2"
               >
-                Player {gameState.currentPlayer} {gameState.currentPlayer === 1 ? '🐄' : '🐂'}
+                Player {gameState.currentPlayer} ({gameState.currentPlayer === 1 ? 'Dark' : 'Light'})
               </Badge>
             </Card>
 
