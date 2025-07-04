@@ -262,11 +262,23 @@ const GameBoard = () => {
                   {/* Inner square */}
                   <rect x="150" y="150" width="100" height="100" fill="none" stroke="#92400e" strokeWidth="2" />
                   
-                  {/* Connecting lines */}
+                  {/* Connecting lines between squares */}
                   <line x1="200" y1="50" x2="200" y2="150" stroke="#92400e" strokeWidth="2" />
                   <line x1="200" y1="250" x2="200" y2="350" stroke="#92400e" strokeWidth="2" />
                   <line x1="50" y1="200" x2="150" y2="200" stroke="#92400e" strokeWidth="2" />
                   <line x1="250" y1="200" x2="350" y2="200" stroke="#92400e" strokeWidth="2" />
+
+                  {/* Diagonal lines for outer square */}
+                  <line x1="50" y1="50" x2="350" y2="350" stroke="#92400e" strokeWidth="2" />
+                  <line x1="350" y1="50" x2="50" y2="350" stroke="#92400e" strokeWidth="2" />
+                  
+                  {/* Diagonal lines for middle square */}
+                  <line x1="100" y1="100" x2="300" y2="300" stroke="#92400e" strokeWidth="2" />
+                  <line x1="300" y1="100" x2="100" y2="300" stroke="#92400e" strokeWidth="2" />
+                  
+                  {/* Diagonal lines for inner square */}
+                  <line x1="150" y1="150" x2="250" y2="250" stroke="#92400e" strokeWidth="2" />
+                  <line x1="250" y1="150" x2="150" y2="250" stroke="#92400e" strokeWidth="2" />
 
                   {/* Board positions */}
                   {boardPositions.map((pos, index) => {
