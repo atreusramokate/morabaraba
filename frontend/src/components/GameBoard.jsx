@@ -354,12 +354,18 @@ const GameBoard = () => {
             <Card className="p-4 bg-white/80 backdrop-blur-sm border-amber-200">
               <h3 className="font-semibold text-amber-900 mb-3">Player Stats</h3>
               <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-red-600">Player 1 🐄:</span>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-800 flex items-center gap-2">
+                    <div className="w-4 h-4 bg-gray-900 rounded-full border-2 border-gray-700"></div>
+                    Player 1 (Dark):
+                  </span>
                   <span>{gameState.player1Cows} left, {gameState.player1OnBoard} on board</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-blue-600">Player 2 🐂:</span>
+                <div className="flex justify-between items-center">
+                  <span className="text-gray-800 flex items-center gap-2">
+                    <div className="w-4 h-4 bg-gray-100 rounded-full border-2 border-gray-400"></div>
+                    Player 2 (Light):
+                  </span>
                   <span>{gameState.player2Cows} left, {gameState.player2OnBoard} on board</span>
                 </div>
               </div>
