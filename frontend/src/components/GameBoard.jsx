@@ -281,31 +281,35 @@ const GameBoard = () => {
                           cy={pos.y}
                           r="15"
                           fill={
-                            piece === 1 ? '#dc2626' : 
-                            piece === 2 ? '#1d4ed8' : 
-                            '#f3f4f6'
+                            piece === 1 ? '#1f2937' : 
+                            piece === 2 ? '#f9fafb' : 
+                            '#e5e7eb'
                           }
                           stroke={
                             isSelected ? '#059669' : 
                             isHighlighted ? '#ea580c' : 
-                            '#374151'
+                            piece === 1 ? '#000000' :
+                            piece === 2 ? '#374151' :
+                            '#9ca3af'
                           }
-                          strokeWidth={isSelected || isHighlighted ? 3 : 1}
+                          strokeWidth={isSelected || isHighlighted ? 4 : piece ? 3 : 2}
                           className="cursor-pointer hover:opacity-80 transition-all duration-200"
                           onClick={() => handlePositionClick(index)}
                         />
                         {piece && (
-                          <text
-                            x={pos.x}
-                            y={pos.y + 5}
-                            textAnchor="middle"
-                            fill="white"
-                            fontSize="12"
-                            fontWeight="bold"
+                          <circle
+                            cx={pos.x}
+                            cy={pos.y}
+                            r="10"
+                            fill={
+                              piece === 1 ? '#000000' : '#ffffff'
+                            }
+                            stroke={
+                              piece === 1 ? '#374151' : '#9ca3af'
+                            }
+                            strokeWidth="1"
                             className="pointer-events-none"
-                          >
-                            {piece === 1 ? '🐄' : '🐂'}
-                          </text>
+                          />
                         )}
                       </g>
                     );
